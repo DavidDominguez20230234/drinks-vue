@@ -4,7 +4,7 @@ import { streamText } from "ai";
 export default {
   async generarReceta(prompt) {
     const result = streamText({
-      model: openRouter("meta-llama/llama-3.3-70b-instruct:free"),
+      model: openRouter("google/gemma-4-31b-it:free"),
       prompt,
       system: `Eres un experto bartender y mixólogo digital. 
 Tu tarea es generar recetas de bebidas (cócteles, jugos, batidos, cafés, bebidas sin alcohol y con alcohol) según lo que el usuario pida. 
